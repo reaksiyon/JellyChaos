@@ -84,5 +84,14 @@ public class PowerUpController : MonoBehaviour
         movement.SetSpeed(movement.initialSpeed); 
     }
 
+    public void ResetProgress()
+    {
+        Exp = 0f;
+
+        boostImage.fillAmount = 0f;
+
+        NormalLight();
+    }
+
     public static PowerUpController Instance;
 }

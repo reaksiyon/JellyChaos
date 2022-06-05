@@ -48,6 +48,8 @@ public class SceneLoader : MonoBehaviour
 
         PanelManager.Instance.PlayTipPanel.SetActive(true);
 
+        PanelManager.Instance.BoostPanel.GetComponentInChildren<PowerUpController>().ResetProgress();
+
         LoadCurrentScene();
     }
 
